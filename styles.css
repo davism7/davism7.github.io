@@ -141,22 +141,11 @@ nav a:hover::after {
 
     /* General reformatting */  
     body{
-        padding: 6% 6%;
+        padding: 5.5% 5.3%;
     }
     .top-row-right-section{
-        gap: 9%;
-    }
-
-
-
-    /* Logo hyperlinks */  
-    .linkedin-img{
-        width: 30px;
-        height: auto;
-    }
-    .github-img{
-        width: 30px;
-        height: auto;
+        gap: 14%;
+        padding-right: 25px;
     }
 
 
