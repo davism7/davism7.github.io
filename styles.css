@@ -141,11 +141,10 @@ nav a:hover::after {
 
     /* General reformatting */  
     body{
-        padding: 5.5% 5.3%;
+        padding: 5.5% 8%;
     }
     .top-row-right-section{
-        gap: 14%;
-        padding-right: 25px;
+        gap: 12%;
     }
 
 
