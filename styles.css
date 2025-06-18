@@ -8,9 +8,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     overscroll-behavior: none;
     background: radial-gradient(circle,rgba(28, 29, 33, 1) 0%, rgba(32, 33, 36, 1) 100%);
+    background-color: rgba(32, 33, 36, 1);
 }
 body{
     padding: 3% 5%;
@@ -139,25 +139,12 @@ nav a:hover::after {
 
 
 
-    /* General reformatting */
-    html, body {
-        margin: 0;
-        padding: 0;
-        background-color: black; /* fallback */
-    }  
+    /* General reformatting */  
     body{
-        position: relative;
-        overflow-x: hidden;
-        overscroll-behavior-y: none;
+        padding: 6% 6%;
     }
     .top-row-right-section{
         gap: 9%;
-    }
-    @supports(padding: max(0px)) {
-        body {
-          padding-top: constant(safe-area-inset-top); /* old iOS */
-          padding-top: env(safe-area-inset-top);      /* new iOS */
-        }
     }
 
 
