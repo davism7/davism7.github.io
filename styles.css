@@ -58,16 +58,10 @@ header{
     height: auto;
     transition: transform 0.3s ease;
 }
-.linkedin-img:hover {
-    transform: scale(1.2);
-}
 .github-img{
     width: 34px;
     height: auto;
     transition: transform 0.3s ease;
-}
-.github-img:hover {
-    transform: scale(1.2);
 }
 
 
@@ -159,9 +153,6 @@ nav a:hover::after {
         cursor: pointer;
         transition: transform 0.3s ease;
     }
-    #menu-button:hover {
-        transform: scale(1.2);
-    }
 
 
 
@@ -218,13 +209,6 @@ nav a:hover::after {
     }
   }
 
-  @media (hover: none) {
-    .linkedin-img:hover,
-    .github-img:hover,
-    #menu-button:hover{
-      transform: none;
-    }
-  }
 
 
 /* Breakpoints: 
