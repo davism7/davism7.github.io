@@ -218,6 +218,13 @@ nav a:hover::after {
     }
   }
 
+  @media (hover: none) {
+    .linkedin-img:hover,
+    .github-img:hover,
+    #menu-button:hover{
+      transform: none;
+    }
+  }
 
 
 /* Breakpoints: 
