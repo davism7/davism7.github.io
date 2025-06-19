@@ -27,7 +27,17 @@
                         <a href="about.html">About</a>
                         <a href="portfolio.html">Portfolio</a>
                         <a href="resume.html">Resume</a>
+                        <div class="dropdown-logos">
+                        </div>
                     </div>
+                    <div class="dropdown-logos-fixed" id="dropdown-logos">
+                        <a href="https://www.linkedin.com/in/davismoralescs/">
+                            <img src="linkedin-logo.png" alt="LinkedIn" class="linkedin-img2">
+                        </a>
+                        <a href="https://github.com/davism7">
+                            <img src="github-logo.png" alt="GitHub" class="github-img2">
+                        </a>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -41,9 +51,12 @@
     </header>
     <script>
         function toggleDropdown() {
-            const dropdown = document.getElementById('dropdown-nav');
-            dropdown.style.display = (dropdown.style.display === 'flex') ? 'none' : 'flex';
+            document.body.classList.toggle('dropdown-open');
         }
+            window.addEventListener('pageshow', () => {
+            document.body.classList.remove('dropdown-open');
+        });
     </script>
+    
 </body>
 </html>
