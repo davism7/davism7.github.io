@@ -1,265 +1,329 @@
-/* General formatting */  
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General formatting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overscroll-behavior: none;
-    background: radial-gradient(circle,rgba(28, 29, 33, 1) 0%, rgba(32, 33, 36, 1) 100%);
-    background-color: rgba(32, 33, 36, 1);
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  background: radial-gradient(
+    circle,
+    rgba(28, 29, 33, 1) 0%,
+    rgba(32, 33, 36, 1) 100%
+  );
+  background-color: rgba(32, 33, 36, 1);
 }
-body{
-    padding: 3% 3.5%;
-    font-family: 'Inter', sans-serif;
+body {
+  padding: 3% 6.4%;
+  font-family: "Inter", sans-serif;
+}
+main {
+  color: whitesmoke;
+  padding: 150px 0px;
+  letter-spacing: 2.8px;
+  line-height: 22px;
 }
 
 
 
-/* DAVIS logo */  
+/* DAVIS logo */
 .logo-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 54px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #92cce4, #caeeb8, #c7b3d8, #fac099);
-    background-size: 600% 600%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: moveGradient 5s linear infinite;
+  font-family: "Orbitron", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #92cce4, #caeeb8, #c7b3d8, #fac099);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 5s linear infinite;
 }
 @keyframes moveGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-  
-
-
-/* Logo hyperlinks */  
-.linkedin-img{
-    width: 38px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-.linkedin-img:hover {
-    transform: scale(1.2);
-}
-.github-img{
-    width: 38px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-.github-img:hover {
-    transform: scale(1.2);
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
 
-/* DAVIS logo & logo hyperlinks section */  
-.top-row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* DAVIS logo & contact button section */
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.top-row-right-section{
-    padding-right: 2.7%;
-    align-items: center;
-    display: flex;
-    gap: 20%;
+.top-row-right-section {
+  align-items: center;
+  display: flex;
 }
 
 
 
-/* Navigation bar */  
-nav{
-    text-align: center;
-    padding-top: 0.5%;
+/* Navigation bar */
+nav {
+  text-align: center;
 }
-nav a{
-    position: relative;
-    margin: 0 55px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    color: white;
+nav a {
+  position: relative;
+  margin: 0 55px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  color: whitesmoke;
+  font-weight: bolder;
 }
 nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #92cce4, #caeeb8, #c7b3d8, #fac099);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* Hide mobile view */
+.mobile-menu {
+  display: none;
+}
+
+
+
+/* Home page text */
+.intro {
+  font-size: 50px;
+}
+.role {
+  font-size: 25px;
+}
+
+
+
+/* Downlaod CV button */
+.download-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 15px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  background: linear-gradient(135deg, #70c0e2, #abe48f);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 180, 216, 0.3);
+}
+
+
+
+/* Contact button 1 */
+.contact-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(103, 103, 103);
+}
+
+
+
+/* Contact button 2 */
+.contact-btn2 {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-btn2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(81, 81, 81);
+}
+
+
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+  /* Switch device view */
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    position: relative;
+  }
+
+
+
+  /* Hide contact button */
+  .contact-btn {
+    display: none;
+  }
+
+
+
+  /* General reformatting */
+  body {
+    padding: 7.5% 8%;
+  }
+
+
+
+  /* Menu button */
+  #menu-button {
+    font-size: 45px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  #menu-button:hover {
+    transform: scale(1.2);
+  }
+
+
+
+  /* Dropdown contact button */
+  .dropdown-button-fixed {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 999;
+  }
+
+
+
+  /* Menu dropdown navigation */
+  .dropdown-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(28, 29, 33, 1) 0%,
+      rgba(32, 33, 36, 1) 100%
+    );
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    z-index: 998;
+  }
+  .dropdown-content a {
+    position: relative;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 8.75%;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content a::after {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 3px;
+    left: 0%;
+    bottom: 25%;
+    height: 3%;
     width: 100%;
     background: linear-gradient(to right, #92cce4, #caeeb8, #c7b3d8, #fac099);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
-}
-nav a:hover::after {
+  }
+  .dropdown-content a:hover::after {
     transform: scaleX(1);
-}
-
-
-
-/* Hide mobile view */  
-.mobile-menu{
-    display: none;
-}
-
-
-
-/* Mobile CSS */  
-@media (max-width: 768px) {
-    /* Switch device view */  
-    .desktop-nav {
-        display: none;
-    }
-    .mobile-menu {
-        display: block;
-        position: relative;
-    }
-
-
-
-    /* Hide logo hyperlinks */  
-    .linkedin-img{
-        display: none;
-    }
-    .github-img{
-        display: none;
-    }
-
-
-
-    /* General reformatting */  
-    body{
-        padding: 7.5% 8%;
-    }
-    .top-row-right-section{
-        gap: 12%;
-    }
-
-    
-
-    /* Menu button */  
-    #menu-button {
-        font-size: 45px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
-    #menu-button:hover {
-        transform: scale(1.2);
-    }
-
-
-    
-    /* Dropdown logo hyperlinks */  
-    .dropdown-logos-fixed {
-        position: fixed;
-        bottom: 45px;
-        left: 0;
-        width: 100%;
-        justify-content: center;
-        gap: 38px;
-        z-index: 999;
-    }
-    .dropdown-logos-fixed img {
-        width: 39px;
-        height: auto;
-    }
-    .dropdown-logos-fixed img:hover {
-        transform: scale(1.2);
-    }
-
-
-
-    /* Menu dropdown navigation */  
-    .dropdown-content {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle, rgba(28, 29, 33, 1) 0%, rgba(32, 33, 36, 1) 100%);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 60px;
-        box-sizing: border-box;
-        z-index: 998;
-    }
-    .dropdown-content a {
-        position: relative;
-        color: white;
-        font-size: 24px;
-        padding: 8.75%;
-        text-decoration: none;
-        font-family: 'Inter', sans-serif;
-        display: block;
-        text-align: center;
-    }
-    .dropdown-content a::after {
-        content: "";
-        position: absolute;
-        left: 0%;
-        bottom: 25%;
-        height: 3px;
-        width: 100%;
-        background: linear-gradient(to right, #92cce4, #caeeb8, #c7b3d8, #fac099);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease-in-out;
-    }
-    .dropdown-content a:hover::after {
-        transform: scaleX(1);
-    }
-    #close-button {
-        position: absolute;
-        top: 3.7%;
-        right: 10.5%;
-        background: none;
-        border: none;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
-
-
-    /* Some dropdown logic */  
-    .dropdown-content.show {
-        display: flex;
-    }
-    .dropdown-content,
-    .dropdown-logos-fixed {
-        display: none;
-    }
-    body.dropdown-open .dropdown-content,
-    body.dropdown-open .dropdown-logos-fixed {
-        display: flex;
-    }
+  }
+  #close-button {
+    position: absolute;
+    top: 4.9%;
+    right: 10.1%;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: whitesmoke;
+    cursor: pointer;
   }
 
 
 
-@media (hover: none) {
-    #menu-button:hover{
-        transform: none;
-    }
+  /* Home page main adjustments */
+  main {
+    line-height: 18px;
+    padding-right: 3%;
+    text-align: center;
+  }
+  .intro {
+    font-size: 37px;
+  }
+  .role {
+    font-size: 18.5px;
+  }
+  .download-btn {
+    font-size: 12px;
+  }
+
+
+
+  /* Some dropdown logic */
+  .dropdown-content.show {
+    display: flex;
+  }
+  .dropdown-content,
+  .dropdown-button-fixed {
+    display: none;
+  }
+  body.dropdown-open .dropdown-content,
+  body.dropdown-open .dropdown-button-fixed {
+    display: flex;
+  }
 }
 
-
+@media (hover: none) {
+  #menu-button:hover {
+    transform: none;
+  }
+}
 
 /* Breakpoints: 
 0px to 600px

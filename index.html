@@ -6,18 +6,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top-row">
-            <h1 class="logo-text">DAVIS</h1>
+            <h1 class="logo-text">DM</h1>
             <div class="top-row-right-section">
-                <a href="https://www.linkedin.com/in/davismoralescs/">
-                    <img src="linkedin-logo.png" alt="LinkedIn" class="linkedin-img">
-                </a>
-                <a href="https://github.com/davism7">
-                    <img src="github-logo.png" alt="Github" class="github-img">
-                </a>
+                <a href="contact.html" class="contact-btn">Contact</a>
                 <!-- Hidden on desktop, shown on mobile -->
                 <div class="mobile-menu">
                     <button onclick="toggleDropdown()" id="menu-button">☰</button>
@@ -27,16 +23,9 @@
                         <a href="about.html">About</a>
                         <a href="portfolio.html">Portfolio</a>
                         <a href="resume.html">Resume</a>
-                        <div class="dropdown-logos">
-                        </div>
                     </div>
-                    <div class="dropdown-logos-fixed" id="dropdown-logos">
-                        <a href="https://www.linkedin.com/in/davismoralescs/">
-                            <img src="linkedin-logo.png" alt="LinkedIn" class="linkedin-img2">
-                        </a>
-                        <a href="https://github.com/davism7">
-                            <img src="github-logo.png" alt="GitHub" class="github-img2">
-                        </a>
+                    <div class="dropdown-button-fixed" id="dropdown-button">
+                        <a href="contact.html" class="contact-btn2">Contact</a>
                     </div>                    
                 </div>
             </div>
@@ -49,6 +38,11 @@
             <a href="resume.html">Resume</a>
         </nav>
     </header>
+    <main>
+        <br><h3 class="intro">Hello, I'm Davis</h3></br>
+        <br><h3 class="role">An aspiring Data Analyst</h3></br>
+        <a href="Davis Morales - Resume.pdf" class="download-btn" download>Download CV</a>
+    </main>
     <script>
         function toggleDropdown() {
             document.body.classList.toggle('dropdown-open');
@@ -57,6 +51,5 @@
             document.body.classList.remove('dropdown-open');
         });
     </script>
-    
 </body>
 </html>
