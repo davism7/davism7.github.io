@@ -152,7 +152,7 @@ nav a:hover::after {
 
     /* Menu button */  
     #menu-button {
-        font-size: 40px;
+        font-size: 45px;
         background: none;
         border: none;
         color: white;
@@ -176,7 +176,7 @@ nav a:hover::after {
         z-index: 999;
     }
     .dropdown-logos-fixed img {
-        width: 37px;
+        width: 39px;
         height: auto;
     }
     .dropdown-logos-fixed img:hover {
