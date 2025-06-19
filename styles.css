@@ -221,7 +221,7 @@ nav a:hover::after {
   /* Dropdown contact button */
   .dropdown-button-fixed {
     position: fixed;
-    bottom: 100px;
+    bottom: 80px;
     left: 0;
     width: 100%;
     justify-content: center;
@@ -294,7 +294,7 @@ nav a:hover::after {
     text-align: center;
   }
   .intro {
-    font-size: 37px;
+    font-size: 35px;
     line-height: 50px;
   }
   .role {
