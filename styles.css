@@ -295,6 +295,7 @@ nav a:hover::after {
   }
   .intro {
     font-size: 37px;
+    line-height: 50px;
   }
   .role {
     font-size: 18.5px;
