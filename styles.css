@@ -28,6 +28,8 @@ main {
   display: none;
 }
 
+
+
 /* DAVIS logo */
 .logo-text {
   font-family: "Orbitron", sans-serif;
@@ -52,6 +54,8 @@ main {
   }
 }
 
+
+
 /* Contact button 1 */
 .contact-btn {
   display: inline-block;
@@ -69,6 +73,8 @@ main {
 
 }
 
+
+
 /* DAVIS logo & contact button section */
 .top-row {
   display: flex;
@@ -79,6 +85,8 @@ main {
   align-items: center;
   display: flex;
 }
+
+
 
 /* Navigation bar */
 nav {
@@ -109,6 +117,8 @@ nav a:hover::after {
   transform: scaleX(1);
 }
 
+
+
 /* Home page text */
 .intro {
   font-size: 65px;
@@ -116,6 +126,8 @@ nav a:hover::after {
 .role {
   font-size: 28px;
 }
+
+
 
 /* Home page hyperlinks */
 .logo-links {
@@ -148,6 +160,9 @@ nav a:hover::after {
   box-shadow: 0 8px 20px rgba(0, 180, 216, 0.3);
 }
 
+
+
+/* Home page image */
 .image-wrapper {
   position: absolute;
   right: 17%;
@@ -159,7 +174,6 @@ nav a:hover::after {
   align-items: center;
   justify-content: center;
 }
-
 .side-image {
   position: relative;
   width: 100%;
@@ -167,7 +181,6 @@ nav a:hover::after {
   z-index: 2;
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
 }
-
 .image-bg-shape {
   position: absolute;
   width: 110%;
@@ -195,15 +208,21 @@ nav a:hover::after {
     position: relative;
   }
 
+
+
   /* Hide contact button */
   .contact-btn {
     display: none;
   }
 
+
+
   /* General reformatting */
   body {
     padding: 7.5% 8%;
   }
+
+
 
   /* Menu button */
   #menu-button {
@@ -218,6 +237,8 @@ nav a:hover::after {
     transform: scale(1.2);
   }
 
+
+
   /* Dropdown contact button */
   .dropdown-button-fixed {
     position: fixed;
@@ -227,6 +248,8 @@ nav a:hover::after {
     justify-content: center;
     z-index: 999;
   }
+
+
 
   /* Menu dropdown navigation */
   .dropdown-content {
@@ -298,6 +321,8 @@ nav a:hover::after {
     box-shadow: 0 8px 20px rgb(81, 81, 81);
   }
 
+
+
   /* Some dropdown logic */
   .dropdown-content.show {
     display: flex;
@@ -310,10 +335,13 @@ nav a:hover::after {
   body.dropdown-open .dropdown-button-fixed {
     display: flex;
   }
+  body.dropdown-open {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none; /* optional: disables touch gestures */
+  }  
 
-  body.dropdown-open .download-btn {
-    display: none !important;
-  }
+
 
   /* Home page reformatting */
   main {
@@ -346,6 +374,8 @@ nav a:hover::after {
     height: 90%;
   }
 }
+
+
 
 @media (hover: none) {
   #menu-button:hover {
