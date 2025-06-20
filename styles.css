@@ -311,6 +311,10 @@ nav a:hover::after {
     display: flex;
   }
 
+  body.dropdown-open .download-btn {
+    display: none !important;
+  }
+
   /* Home page reformatting */
   main {
     line-height: 19px;
