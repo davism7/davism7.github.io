@@ -246,7 +246,8 @@ nav a:hover::after {
     left: 0;
     width: 100%;
     justify-content: center;
-    z-index: 999;
+    display: flex;
+    z-index: 10000;
   }
 
 
@@ -268,7 +269,8 @@ nav a:hover::after {
     justify-content: center;
     padding-bottom: 60px;
     box-sizing: border-box;
-    z-index: 998;
+    z-index: 9999;
+    display: flex;
   }
   .dropdown-content a {
     position: relative;
@@ -338,9 +340,12 @@ nav a:hover::after {
   body.dropdown-open {
     overflow: hidden;
     height: 100vh;
-    touch-action: none; /* optional: disables touch gestures */
+    touch-action: none;
   }  
-
+  body.dropdown-open main {
+    display: none;
+  }
+  
 
 
   /* Home page reformatting */
