@@ -1,14 +1,12 @@
 /* General formatting */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   overscroll-behavior: none;
   background: radial-gradient(
     circle,
@@ -22,13 +20,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 main {
+  margin-top: 11.5%;
   color: whitesmoke;
-  padding: 150px 0px;
-  letter-spacing: 2.8px;
-  line-height: 22px;
+  line-height: 27px;
 }
-
-
+.mobile-menu {
+  display: none;
+}
 
 /* DAVIS logo */
 .logo-text {
@@ -54,7 +52,22 @@ main {
   }
 }
 
+/* Contact button 1 */
+.contact-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.contact-btn:hover {
+  transform: scale(1.06);
 
+}
 
 /* DAVIS logo & contact button section */
 .top-row {
@@ -66,8 +79,6 @@ main {
   align-items: center;
   display: flex;
 }
-
-
 
 /* Navigation bar */
 nav {
@@ -98,35 +109,36 @@ nav a:hover::after {
   transform: scaleX(1);
 }
 
-
-
-/* Hide mobile view */
-.mobile-menu {
-  display: none;
-}
-
-
-
 /* Home page text */
 .intro {
-  font-size: 50px;
+  font-size: 65px;
 }
 .role {
-  font-size: 25px;
+  font-size: 28px;
 }
 
-
-
-/* Downlaod CV button */
+/* Home page hyperlinks */
+.logo-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 1.5%;
+}
+.logo-icon {
+  width: 43px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.logo-icon:hover {
+  transform: scale(1.1);
+}
 .download-btn {
   display: inline-block;
-  margin-top: 18px;
-  padding: 15px 14px;
-  font-size: 15px;
-  font-weight: bold;
+  margin-top: 22px;
+  padding: 16px 11px;
+  font-size: 19px;
+  font-weight: bolder;
   color: whitesmoke;
   background: linear-gradient(135deg, #70c0e2, #abe48f);
-  border: none;
   border-radius: 8px;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -136,42 +148,38 @@ nav a:hover::after {
   box-shadow: 0 8px 20px rgba(0, 180, 216, 0.3);
 }
 
-
-
-/* Contact button 1 */
-.contact-btn {
-  display: inline-block;
-  padding: 10px 22px;
-  font-size: 15px;
-  font-weight: bold;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgb(103, 103, 103);
+.image-wrapper {
+  position: absolute;
+  right: 17%;
+  top: 37%;
+  width: 290px;
+  height: 290px;
+  max-width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-/* Contact button 2 */
-.contact-btn2 {
-  display: inline-block;
-  padding: 10px 22px;
-  font-size: 15px;
-  font-weight: bold;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.side-image {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
 }
-.contact-btn2:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgb(81, 81, 81);
+
+.image-bg-shape {
+  position: absolute;
+  width: 110%;
+  height: 118%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #e0e0e0, #c0c0c0, #a0a0a0);
+  background-size: 400% 400%;
+  z-index: 1;
+  filter: blur(45px);
 }
 
 
@@ -187,21 +195,15 @@ nav a:hover::after {
     position: relative;
   }
 
-
-
   /* Hide contact button */
   .contact-btn {
     display: none;
   }
 
-
-
   /* General reformatting */
   body {
     padding: 7.5% 8%;
   }
-
-
 
   /* Menu button */
   #menu-button {
@@ -216,8 +218,6 @@ nav a:hover::after {
     transform: scale(1.2);
   }
 
-
-
   /* Dropdown contact button */
   .dropdown-button-fixed {
     position: fixed;
@@ -227,8 +227,6 @@ nav a:hover::after {
     justify-content: center;
     z-index: 999;
   }
-
-
 
   /* Menu dropdown navigation */
   .dropdown-content {
@@ -284,27 +282,21 @@ nav a:hover::after {
     color: whitesmoke;
     cursor: pointer;
   }
-
-
-
-  /* Home page main adjustments */
-  main {
-    line-height: 18px;
-    padding-right: 3%;
-    text-align: center;
+  .contact-btn2 {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
-  .intro {
-    font-size: 36px;
-    line-height: 50px;
+  .contact-btn2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgb(81, 81, 81);
   }
-  .role {
-    font-size: 18.5px;
-  }
-  .download-btn {
-    font-size: 12px;
-  }
-
-
 
   /* Some dropdown logic */
   .dropdown-content.show {
@@ -317,6 +309,37 @@ nav a:hover::after {
   body.dropdown-open .dropdown-content,
   body.dropdown-open .dropdown-button-fixed {
     display: flex;
+  }
+
+  /* Home page reformatting */
+  main {
+    margin-top: 117%;
+    line-height: 19px;
+  }
+  .intro {
+    font-size: 41px;
+  }
+  .role {
+    font-size: 19px;
+  }
+  .logo-links {
+    margin-top: 5.5%;
+  }
+  .logo-icon {
+    width: 40px;
+    height: auto;
+  }
+  .download-btn{
+    font-size: 18px;
+  }
+  .image-wrapper {
+    right: 23.5%;
+    top: 17%;
+    max-width: 54vw;
+  }
+  .image-bg-shape {
+    width: 90%;
+    height: 90%;
   }
 }
 
