@@ -313,11 +313,11 @@ nav a:hover::after {
 
   /* Home page reformatting */
   main {
-    margin-top: 117%;
     line-height: 19px;
   }
   .intro {
     font-size: 41px;
+    margin-top: 350px;
   }
   .role {
     font-size: 19px;
@@ -334,7 +334,7 @@ nav a:hover::after {
   }
   .image-wrapper {
     right: 23.5%;
-    top: 17%;
+    top: 18%;
     max-width: 54vw;
   }
   .image-bg-shape {
