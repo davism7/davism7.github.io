@@ -1,9 +1,12 @@
-/* General formatting */
+/* General setup */
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
+
+
+/* General HMTL & BODY formatting */
 html,
 body {
   height: 100%;
@@ -19,18 +22,35 @@ body {
   padding: 3% 6.4%;
   font-family: "Inter", sans-serif;
 }
+
+
+/* General MAIN formatting */
 main {
   margin-top: 11.5%;
   color: whitesmoke;
   line-height: 27px;
 }
+
+
+/* Hides MOBILE view */
 .mobile-menu {
   display: none;
 }
 
 
+/* Webpage HEADER portion */
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-row-right-section {
+  align-items: center;
+  display: flex;
+}
 
-/* DAVIS logo */
+
+/* DM logo */
 .logo-text {
   font-family: "Orbitron", sans-serif;
   font-size: 50px;
@@ -55,8 +75,7 @@ main {
 }
 
 
-
-/* Contact button 1 */
+/* DESKTOP view CONTACT button */
 .contact-btn {
   display: inline-block;
   padding: 10px 22px;
@@ -74,21 +93,25 @@ main {
 }
 
 
-
-/* DAVIS logo & contact button section */
-.top-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* MOBILE view CONTACT button */
+.contact-btn2 {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.top-row-right-section {
-  align-items: center;
-  display: flex;
+.contact-btn2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(81, 81, 81);
 }
 
 
-
-/* Navigation bar */
+/* Desktop view NAVIGATION bar */
 nav {
   text-align: center;
 }
@@ -118,8 +141,7 @@ nav a:hover::after {
 }
 
 
-
-/* Home page text */
+/* Home page TEXT */
 .intro {
   font-size: 65px;
 }
@@ -128,8 +150,7 @@ nav a:hover::after {
 }
 
 
-
-/* Home page hyperlinks */
+/* Home page HYPERLINKS */
 .logo-links {
   display: flex;
   gap: 16px;
@@ -143,6 +164,9 @@ nav a:hover::after {
 .logo-icon:hover {
   transform: scale(1.1);
 }
+
+
+/* Home page DOWNLOAD button */
 .download-btn {
   display: inline-block;
   margin-top: 22px;
@@ -161,8 +185,7 @@ nav a:hover::after {
 }
 
 
-
-/* Home page image */
+/* Home page IMAGE */
 .image-wrapper {
   position: absolute;
   right: 17%;
@@ -196,10 +219,9 @@ nav a:hover::after {
 }
 
 
-
-/* Mobile CSS */
+/* MOBILE CSS FORMATTING */
 @media (max-width: 768px) {
-  /* Switch device view */
+  /* Switch dekstop view to MOBILE view*/
   .desktop-nav {
     display: none;
   }
@@ -207,24 +229,19 @@ nav a:hover::after {
     display: block;
     position: relative;
   }
-
-
-
-  /* Hide contact button */
   .contact-btn {
     display: none;
   }
 
 
 
-  /* General reformatting */
+  /* General BODY formatting */
   body {
     padding: 7.5% 8%;
   }
 
 
-
-  /* Menu button */
+  /* MENU button for dropdown */
   #menu-button {
     font-size: 45px;
     background: none;
@@ -238,21 +255,7 @@ nav a:hover::after {
   }
 
 
-
-  /* Dropdown contact button */
-  .dropdown-button-fixed {
-    position: fixed;
-    bottom: 60px;
-    left: 0;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    z-index: 10000;
-  }
-
-
-
-  /* Menu dropdown navigation */
+  /* NAVIGATION in dropdown */
   .dropdown-content {
     position: fixed;
     top: 0;
@@ -297,6 +300,9 @@ nav a:hover::after {
   .dropdown-content a:hover::after {
     transform: scaleX(1);
   }
+
+
+  /* CLOSE button in dropdown */
   #close-button {
     position: absolute;
     top: 4.9%;
@@ -307,25 +313,21 @@ nav a:hover::after {
     color: whitesmoke;
     cursor: pointer;
   }
-  .contact-btn2 {
-    display: inline-block;
-    padding: 10px 22px;
-    font-size: 15px;
-    font-weight: bold;
-    color: whitesmoke;
-    border: 2px solid whitesmoke;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .contact-btn2:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgb(81, 81, 81);
+
+
+  /* CONTACT button in dropdown */
+  .dropdown-button-fixed {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    z-index: 10000;
   }
 
 
-
-  /* Some dropdown logic */
+  /* Some dropdown LOGIC */
   .dropdown-content.show {
     display: flex;
   }
@@ -348,7 +350,7 @@ nav a:hover::after {
   
 
 
-  /* Home page reformatting */
+  /* HOME page reformatting */
   main {
     line-height: 19px;
   }
@@ -380,13 +382,6 @@ nav a:hover::after {
   }
 }
 
-
-
-@media (hover: none) {
-  #menu-button:hover {
-    transform: none;
-  }
-}
 
 /* Breakpoints: 
 0px to 600px
