@@ -14,7 +14,6 @@
 
 /* GENERAL html & body */
 html, body{
-  height: 100%;
   overscroll-behavior: none;
   background: radial-gradient(
     circle,
@@ -23,21 +22,21 @@ html, body{
   );
   background-color: rgba(32, 33, 36, 1);
 }
-body {
-  padding: 3% 6.4%;
+header{
   font-family: "Inter", sans-serif;
+  padding: 3% 0%;
 }
 
 
 /* GENERAL header section */
-.general-header {
+.upper-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding: 0% 5.7%;
 }
-.right-general-header {
-  align-items: center;
+.right-upper-header {
   display: flex;
+  align-items: center;
 }
 
 
@@ -45,42 +44,25 @@ body {
 .DM-logo {
   font-family: "Orbitron", sans-serif;
   font-size: 50px;
-  font-weight: 600;
   letter-spacing: 3px;
-  background: linear-gradient(90deg, #c7b3d8, #fac099);
-  background-size: 600% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: moveGradient 5s linear infinite;
+  color: rgba(245, 245, 245, 0.95);
 }
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 
 
 /* DESKTOP VIEW contact button */
 .contact-button {
   display: inline-block;
-  padding: 10px 22px;
+  padding: 9px 20px;
   font-size: 15px;
-  font-weight: bold;
   color: whitesmoke;
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
+  border: 1.5px solid whitesmoke;
+  border-radius: 30px;
   text-decoration: none;
   transition: transform 0.2s ease;
 }
 .contact-button:hover {
-  transform: scale(1.06);
-
+  transform: scale(1.04);
 }
 
 
@@ -92,10 +74,8 @@ nav a {
   position: relative;
   margin: 0 55px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: "Inter", sans-serif;
+  font-size: 15.5px;
   color: whitesmoke;
-  font-weight: bolder;
 }
 nav a::after {
   content: "";
@@ -104,7 +84,7 @@ nav a::after {
   bottom: -4px;
   height: 3px;
   width: 100%;
-  background: linear-gradient(to right, #c7b3d8, #fac099);
+  background: rgba(245, 245, 245, 0.95);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -164,10 +144,9 @@ nav a:hover::after {
 .dropdown-navigation a {
   position: relative;
   color: whitesmoke;
-  font-size: 24px;
+  font-size: 22px;
   padding: 8.75%;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
   display: block;
   text-align: center;
 }
@@ -178,7 +157,7 @@ nav a:hover::after {
   bottom: 25%;
   height: 3%;
   width: 100%;
-  background: linear-gradient(to right, #c7b3d8, #fac099);
+  background: rgba(245, 245, 245, 0.95);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -191,18 +170,16 @@ nav a:hover::after {
 /* MOBILE VIEW contact button */
 .contact-button2 {
   display: inline-block;
-  padding: 10px 22px;
+  padding: 9px 20px;
   font-size: 15px;
-  font-weight: bold;
   color: whitesmoke;
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
+  border: 1.5px solid whitesmoke;
+  border-radius: 30px;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
 }
 .contact-button2:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgb(81, 81, 81);
+  transform: scale(1.04);
 }
 
 
@@ -222,9 +199,8 @@ nav a:hover::after {
     position: relative;
   }
 
-  /* GENERAL body reformatting */
-  body {
-    padding: 7.5% 8%;
+  .upper-header{
+    padding: 3% 9%;
   }
 
   /* CONTACT button reformatting */

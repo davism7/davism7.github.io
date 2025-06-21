@@ -11,9 +11,9 @@
 </head>
 <body>
     <header>
-        <div class="general-header">
+        <div class="upper-header">
             <h1 class="DM-logo">DM</h1>
-            <div class="right-general-header">
+            <div class="right-upper-header">
                 <a href="contact.html" class="contact-button">Contact</a>
                 <!-- Hidden on desktop, shown on mobile -->
                 <div class="mobile-menu">
@@ -21,8 +21,8 @@
                     <div class="dropdown-navigation">
                         <button onclick="toggleDropdown()" id="close-button">×</button>
                         <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="portfolio.html">Portfolio</a>
+                        <a href="analytics.html">Analytics</a>
+                        <a href="design.html">Design</a>
                         <a href="resume.html">Resume</a>
                     </div>
                     <div class="contact-button2-fixed">
@@ -34,33 +34,33 @@
         <!-- Hidden on mobile, shown on desktop -->
         <nav class="desktop-navigation">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="design.html">Design</a>
             <a href="resume.html">Resume</a>
         </nav>
     </header>
     <main>
-        <br><h3 class="intro">Hello, I'm Davis</h3></br>
-        <br><h3 class="role">An aspiring Data Analyst</h3></br>
-        <div class="logo-links">
-            <a href="https://www.linkedin.com/in/davismoralescs/" target="_blank">
-                <img src="images/linkedin-logo.png" alt="LinkedIn" class="logo-icon">
-            </a>
-            <a href="https://github.com/davism7" target="_blank">
-                <img src="images/github-logo.png" alt="GitHub" class="logo-icon">
-            </a>
-            <a href="mailto:davismorales38@gmail.com" title="Email Me">
-                <img src="images/mail.png" alt="Mail" class="logo-icon">
-            </a>
-            <a href="tel:+13107290741" title="Call Me">
-                <img src="images/phone.png" alt="Phone" class="logo-icon">
-              </a>              
-        </div>
-        <a href="files/DavisResume.pdf" class="download-button" download>Download CV</a>
-        <div class="davis-image-wrapper">
-            <div class="image-bg-shape"></div>
-            <img src="images/DavisProfile.JPEG" alt="Profile Picture" class="davis-image">
-        </div>
+        <div class="panel1">
+            <div class="panel1-left">
+              <h3 class="intro">Hi, I'm Davis.</h3>
+              <h3 class="role">An undergraduate computer science student with experience in data analytics and product design, currently based in Southern California.</h3>
+              <div class="logo-links">
+                <a href="https://www.linkedin.com/in/davismoralescs/" target="_blank">
+                    <img src="images/linkedin-logo.png" alt="LinkedIn" class="logo-icon">
+                </a>
+                <a href="https://github.com/davism7" target="_blank">
+                    <img src="images/github-logo.png" alt="GitHub" class="logo-icon">
+                </a>
+                <a href="mailto:davismorales38@gmail.com" title="Email Me">
+                    <img src="images/mail.png" alt="Mail" class="logo-icon">
+                </a>
+                <a href="tel:+13107290741" title="Call Me">
+                    <img src="images/phone.png" alt="Phone" class="logo-icon">
+                </a>   
+              </div>
+            </div>
+            <img src="Davis.PNG" alt="Profile Picture" class="davis-image">
+          </div>
     </main>
     <script>
         function toggleDropdown() {

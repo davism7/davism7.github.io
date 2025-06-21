@@ -1,101 +1,87 @@
-/* General MAIN formatting */
-main {
-    margin-top: 11.5%;
-    color: whitesmoke;
-    line-height: 27px;
-}
-
-
-/* Home page TEXT */
-.intro {
-    font-size: 65px;
-}
-.role {
-    font-size: 28px;
-}
-
-
-/* Home page HYPERLINKS */
-.logo-links {
-    display: flex;
-    gap: 16px;
-    margin-top: 1.5%;
-}
-.logo-icon {
-    width: 43px;
-    height: auto;
-    transition: transform 0.2s ease;
-}
-.logo-icon:hover {
-    transform: scale(1.1);
-}
-
-
-/* Home page DOWNLOAD button */
-.download-button {
-    display: inline-block;
-    margin-top: 22px;
-    padding: 16px 11px;
-    font-size: 19px;
-    font-weight: bolder;
-    color: whitesmoke;
-    background: linear-gradient(135deg, #c7b3d8, #fac099);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.download-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 180, 216, 0.3);
-}
-
-
-/* Home page IMAGE */
-.davis-image-wrapper {
-    position: absolute;
-    right: 17%;
-    top: 37%;
-    width: 290px;
-    height: 290px;
-    max-width: 35vw;
+/* PANEL 1 */
+.panel1 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.davis-image {
-    position: relative;
-    width: 100%;
-    border-radius: 12px;
-    z-index: 2;
-    box-shadow: 0 4px 50px rgba(255, 255, 255, 0.192);
-}
+    gap: 160px;
+    padding: 3% 5%;
+    color: whitesmoke;
+    flex-wrap: wrap;
+  }
+  
+  /* PANEL 1 left section */
+  .panel1-left {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  /* PANEL 1 text */
+  .intro {
+    font-size: 65px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .role {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 35px;
+    max-width: 40ch;
+    margin-top: 16px;
+  }
+  
+  /* PANEL 1 hyperlinks */
+  .logo-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 22px;
+  }
+  .logo-icon {
+    width: 38px;
+    transition: transform 0.2s ease;
+  }
+  .logo-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* PANEL 1 profile picture */
+  .davis-image {
+    width: 350px;
+    height: auto;
+  }
+  
 
-
-@media (max-width: 768px){
-    /* HOME page reformatting */
-    main {
-        line-height: 19px;
+  @media (max-width: 768px) {
+    .panel1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: -15px;
+      }
+  
+    .panel1-left {
+      max-width: 82vw;
     }
+
+      
+    .davis-image {
+        width: 240px;
+    }
+  
     .intro {
-        font-size: 41px;
-        margin-top: 325px;
+      font-size: 42px;
+      line-height: 2;
     }
+  
     .role {
-        font-size: 19px;
+      font-size: 14px;
+      line-height: 28px;
+      max-width: 35ch;
+      margin: 0 auto;
     }
-    .logo-links {
-        margin-top: 5.5%;
-    }
+
     .logo-icon {
-        width: 40px;
-        height: auto;
+        width: 33px;
     }
-    .download-button{
-        font-size: 18px;
-    }
-    .davis-image-wrapper {
-        right: 23.5%;
-        top: 16%;
-        max-width: 54vw;
-    }
-}
+  }
+  
