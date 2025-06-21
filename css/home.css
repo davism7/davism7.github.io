@@ -3,8 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 160px;
-    padding: 3% 5%;
+    gap: 120px;
     color: whitesmoke;
     flex-wrap: wrap;
   }
@@ -45,8 +44,11 @@
   
   /* PANEL 1 profile picture */
   .davis-image {
-    width: 350px;
+    padding: 2%;
+    width: 430px;
     height: auto;
+    opacity: 70%;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.26));
   }
   
 
@@ -63,7 +65,6 @@
       max-width: 82vw;
     }
 
-      
     .davis-image {
         width: 240px;
     }
