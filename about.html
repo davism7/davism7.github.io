@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="top-row">
-            <h1 class="logo-text">DM</h1>
-            <div class="top-row-right-section">
-                <a href="contact.html" class="contact-btn">Contact</a>
+        <div class="general-header">
+            <h1 class="DM-logo">DM</h1>
+            <div class="right-general-header">
+                <a href="contact.html" class="contact-button">Contact</a>
                 <!-- Hidden on desktop, shown on mobile -->
                 <div class="mobile-menu">
                     <button onclick="toggleDropdown()" id="menu-button">☰</button>
-                    <div id="dropdown-nav" class="dropdown-content">
+                    <div class="dropdown-navigation">
                         <button onclick="toggleDropdown()" id="close-button">×</button>
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="portfolio.html">Portfolio</a>
                         <a href="resume.html">Resume</a>
                     </div>
-                    <div class="dropdown-button-fixed" id="dropdown-button">
-                        <a href="contact.html" class="contact-btn2">Contact</a>
+                    <div class="contact-button2-fixed">
+                        <a href="contact.html" class="contact-button2">Contact</a>
                     </div>                    
                 </div>
             </div>
         </div>
         <!-- Hidden on mobile, shown on desktop -->
-        <nav class="desktop-nav">
+        <nav class="desktop-navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>

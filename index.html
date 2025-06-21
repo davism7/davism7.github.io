@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="top-row">
-            <h1 class="logo-text">DM</h1>
-            <div class="top-row-right-section">
-                <a href="contact.html" class="contact-btn">Contact</a>
+        <div class="general-header">
+            <h1 class="DM-logo">DM</h1>
+            <div class="right-general-header">
+                <a href="contact.html" class="contact-button">Contact</a>
                 <!-- Hidden on desktop, shown on mobile -->
                 <div class="mobile-menu">
                     <button onclick="toggleDropdown()" id="menu-button">☰</button>
-                    <div id="dropdown-nav" class="dropdown-content">
+                    <div class="dropdown-navigation">
                         <button onclick="toggleDropdown()" id="close-button">×</button>
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="portfolio.html">Portfolio</a>
                         <a href="resume.html">Resume</a>
                     </div>
-                    <div class="dropdown-button-fixed" id="dropdown-button">
-                        <a href="contact.html" class="contact-btn2">Contact</a>
+                    <div class="contact-button2-fixed">
+                        <a href="contact.html" class="contact-button2">Contact</a>
                     </div>                    
                 </div>
             </div>
         </div>
         <!-- Hidden on mobile, shown on desktop -->
-        <nav class="desktop-nav">
+        <nav class="desktop-navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
@@ -42,17 +43,23 @@
         <br><h3 class="intro">Hello, I'm Davis</h3></br>
         <br><h3 class="role">An aspiring Data Analyst</h3></br>
         <div class="logo-links">
-            <a href="https://github.com/davism7" target="_blank">
-                <img src="github-logo.png" alt="GitHub" class="logo-icon">
-            </a>
             <a href="https://www.linkedin.com/in/davismoralescs/" target="_blank">
-                <img src="linkedin-logo.png" alt="LinkedIn" class="logo-icon">
+                <img src="images/linkedin-logo.png" alt="LinkedIn" class="logo-icon">
             </a>
+            <a href="https://github.com/davism7" target="_blank">
+                <img src="images/github-logo.png" alt="GitHub" class="logo-icon">
+            </a>
+            <a href="mailto:davismorales38@gmail.com" title="Email Me">
+                <img src="images/mail.png" alt="Mail" class="logo-icon">
+            </a>
+            <a href="tel:+13107290741" title="Call Me">
+                <img src="images/phone.png" alt="Phone" class="logo-icon">
+              </a>              
         </div>
-        <a href="Davis Morales - Resume.pdf" class="download-btn" download>Download CV</a>
-        <div class="image-wrapper">
+        <a href="files/DavisResume.pdf" class="download-button" download>Download CV</a>
+        <div class="davis-image-wrapper">
             <div class="image-bg-shape"></div>
-            <img src="Davis Profile Picture.JPEG" alt="Hero Image" class="side-image">
+            <img src="images/DavisProfile.JPEG" alt="Profile Picture" class="davis-image">
         </div>
     </main>
     <script>
