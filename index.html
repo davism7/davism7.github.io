@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="upper-header">
+            <h1 class="DM-logo">DM</h1>
+            <div class="right-upper-header">
+                <a href="contact.html" class="contact-button">Contact</a>
+                <!-- Hidden on desktop, shown on mobile -->
+                <div class="mobile-menu">
+                    <button onclick="toggleDropdown()" id="menu-button">☰</button>
+                    <div class="dropdown-navigation">
+                        <button onclick="toggleDropdown()" id="close-button">×</button>
+                        <a href="index.html">Home</a>
+                        <a href="analytics.html">Analytics</a>
+                        <a href="design.html">Design</a>
+                        <a href="resume.html">Resume</a>
+                    </div>
+                    <div class="contact-button2-fixed">
+                        <a href="contact.html" class="contact-button2">Contact</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Hidden on mobile, shown on desktop -->
+        <nav class="desktop-navigation">
+            <a href="index.html">Home</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="design.html">Design</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>    
+    <script>
+        function toggleDropdown() {
+        document.body.classList.toggle('dropdown-open');
+        }
+        window.addEventListener('pageshow', () => {
+        document.body.classList.remove('dropdown-open');
+        });
+    </script>
+</body>
+</html>
