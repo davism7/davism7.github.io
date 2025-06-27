@@ -161,6 +161,7 @@ main {
   .contact-form textarea {
     padding: 13px;
     margin-bottom: 30px;
+    font-size: 14px;
   }
 
   .contact-form button {
