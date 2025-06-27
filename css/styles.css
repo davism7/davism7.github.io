@@ -50,10 +50,10 @@ header{
 
 
 
-/* DESKTOP VIEW download cv button */
-.cv-button {
+/* DESKTOP VIEW contact button */
+.contact-button {
   display: inline-block;
-  padding: 10px 14px;
+  padding: 10px 18px;
   font-size: 15px;
   color: rgba(245, 245, 245, 0.924);
   border: 1.5px solid rgba(245, 245, 245, 0.924);
@@ -61,8 +61,8 @@ header{
   text-decoration: none;
   transition: transform 0.2s ease;
 }
-.cv-button:hover {
-  transform: scale(1.04);
+.contact-button:hover {
+  background-color: rgba(245, 245, 245, 0.043);
 }
 
 
@@ -167,10 +167,10 @@ nav a:hover::after {
 }
 
 
-/* MOBILE VIEW download cv button */
-.cv-button2 {
+/* MOBILE VIEW contact buttion */
+.contact-button2 {
   display: inline-block;
-  padding: 10px 14px;
+  padding: 10px 18px;
   font-size: 15px;
   color: rgba(245, 245, 245, 0.924);
   border: 1.5px solid rgba(245, 245, 245, 0.924);
@@ -178,7 +178,7 @@ nav a:hover::after {
   text-decoration: none;
   transition: transform 0.2s ease;
 }
-.cv-button2:hover {
+.contact-button2:hover {
   transform: scale(1.04);
 }
 
@@ -214,7 +214,7 @@ footer {
   color: rgba(245, 245, 245, 0.95);
 }
 .footer-center a:hover {
-  transform: scale(1.03);
+  color: rgb(203, 240, 212);
 }
 .footer-right{
   display: flex;
@@ -235,7 +235,7 @@ footer {
   .desktop-navigation {
     display: none;
   }
-  .cv-button {
+  .contact-button {
     display: none;
   }
 
@@ -250,7 +250,7 @@ footer {
   }
 
   /* DOWNLOAD CV button reformatting */
-  .cv-button2-fixed {
+  .contact-button2-fixed {
     position: fixed;
     bottom: 60px;
     left: 0;
@@ -262,11 +262,11 @@ footer {
 
   /* MOBILE VIEW dropdown logic */
   .dropdown-navigation,
-  .cv-button2-fixed {
+  .contact-button2-fixed {
     display: none;
   }
   body.dropdown-open .dropdown-navigation,
-  body.dropdown-open .cv-button2-fixed {
+  body.dropdown-open .contact-button2-fixed {
     display: flex;
   }
   body.dropdown-open main {
