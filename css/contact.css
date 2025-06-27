@@ -108,28 +108,34 @@ main {
 
 @media (max-width: 768px) {
   main {
-    margin-bottom: -35px;
+    margin-bottom: -15px;
   }
 
   .upper-title {
-    margin-top: 13px;
+    margin-top: 20px;
     font-size: 20px;
   }
   
   .lower-title {
-    font-size: 46px;
+    font-size: 48px;
   }
   
   .contact-wrapper {
-    margin-top: 15px;
+    margin-top: 5px;
     flex-direction: column;
-    padding: 25px;
-    gap: 20px;
+    padding: 40px;
   }
 
-  .contact-left,
-  .contact-right {
+  .contact-left {
     max-width: 100%;
+  }
+
+  .contact-right{
+    margin-bottom: -20px;
+  }
+
+  .contact-divider-vertical {
+    display: none;
   }
 
   .contact-box.full-link {
@@ -137,36 +143,33 @@ main {
   }
 
   .icon {
-    width: 34px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-
-  .contact-box {
-    padding: 10px;
-  }
-
-  .contact-form button {
-    display: block;
-    margin: 0 auto;
-    width: 25%;
-    font-size: 13px;
-  }
-
-  .contact-divider-vertical {
-    display: none;
+    width: 33px;
   }
 
   .contact-divider-horizontal {
     display: block;
-    margin: 20px 0;
-    width: 100%;
+    position: relative;
+    margin: 0px 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 110%;
     height: 1px;
     background-color: rgba(245, 245, 245, 0.924);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 13px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 8px 25px;
+    font-size: 13px;
   }
 }
 
